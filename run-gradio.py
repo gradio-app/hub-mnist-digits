@@ -3,6 +3,7 @@ import gradio as gr
 from gradio.inputs import Sketchpad
 from gradio.outputs import Label
 
+
 mnist_model = tf.keras.models.load_model('models/mnist-99.0-acc.h5')
 
 def predict(inp):
@@ -18,4 +19,7 @@ gr.Interface(
 	sketchpad,  # could also be 'sketchpad' 
 	label,
 	capture_session=True,
-	live=True).launch();
+	title="Real-time MNIST Sketchpad",
+	description="See MNIST predictions realtime as you draw on a sketchpad.",
+	thumbnail="",
+	live=True,).launch();
