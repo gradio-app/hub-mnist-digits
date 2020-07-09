@@ -1,3 +1,3 @@
 # real-time-mnist
 
-![](thumbnail.png)
+![](thumbnail2.png)
