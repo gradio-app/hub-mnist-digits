@@ -21,5 +21,5 @@ gr.Interface(
 	capture_session=True,
 	title="Real-time MNIST Sketchpad",
 	description="See MNIST predictions realtime as you draw on a sketchpad.",
-	thumbnail="https://raw.githubusercontent.com/gradio-app/real-time-mnist/master/thumbnail.png",
+	thumbnail="https://raw.githubusercontent.com/gradio-app/real-time-mnist/master/thumbnail2.png",
 	live=True,).launch();
