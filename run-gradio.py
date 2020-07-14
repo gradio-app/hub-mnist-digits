@@ -20,6 +20,6 @@ gr.Interface(
 	label,
 	capture_session=True,
 	title="Real-time MNIST Sketchpad",
-	description="See MNIST predictions realtime as you draw on a sketchpad.",
+	description="Draw a number 0 through 9 on the sketchpad, and see predictions realtime as you draw. Model trained on the MNIST dataset.",
 	thumbnail="https://raw.githubusercontent.com/gradio-app/real-time-mnist/master/thumbnail2.png",
 	live=True,).launch();
