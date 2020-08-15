@@ -1,6 +1,5 @@
 import tensorflow as tf
 import gradio as gr
-from gradio.inputs import Sketchpad
 from gradio.outputs import Label
 
 
@@ -11,12 +10,11 @@ def predict(inp):
 	return {str(i): prediction[i] for i in range(10)}
 
 
-sketchpad = Sketchpad()
 label = Label(num_top_classes=4)
 
 gr.Interface(
 	predict, 
-	sketchpad,  # could also be 'sketchpad' 
+	"sketchpad", 
 	label,
 	capture_session=True,
 	title="MNIST Sketchpad",
