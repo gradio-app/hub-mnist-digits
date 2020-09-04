@@ -15,4 +15,7 @@ output_component = gr.outputs.Label(num_top_classes=3)
 
 gr.Interface(fn=recognize_digit, 
              inputs="sketchpad", 
-             outputs=output_component).launch();
+             outputs=output_component,
+             title="MNIST Sketchpad",
+             description="Draw a number 0 through 9 on the sketchpad, and click submit to see the model's predictions. Model trained on the MNIST dataset.",
+             thumbnail="https://raw.githubusercontent.com/gradio-app/real-time-mnist/master/thumbnail2.png").launch();
